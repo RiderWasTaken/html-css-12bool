@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #fff;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    height: 100%;
+}
+
+.row {
+    height: calc(100%/5);
+}
+
+
+[class*="col"] {
+    background: hsl(180, 100%, 25%);
+    border: 1px rgb(0, 0, 0) solid;
+    /* text-align: center; */
+    position: relative;
+    padding: 15px;
+}
+
+[class*="col"] > .row {
+    height: 100%;
+}
+
+[class*="col"] > .row > [class*="col"] {
+    height: 100%;
+    background-color: rgb(184, 33, 230);
+    border: 1px solid #fff;
+}
